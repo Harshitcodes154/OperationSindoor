@@ -1,0 +1,496 @@
+{
+  "name": "FlightControls",
+  "maps": [
+    {
+      "name": "Flight",
+      "id": "e7b0a841-3b7c-4a34-a6c8-7f551b9201a1",
+      "actions": [
+        {
+          "name": "Pitch",
+          "type": "Value",
+          "id": "84a7e446-24e1-4560-a292-62283e3cf731",
+          "expectedControlType": "Axis",
+          "processors": "",
+          "interactions": "",
+          "initialStateCheck": true
+        },
+        {
+          "name": "Roll",
+          "type": "Value",
+          "id": "c1f727c6-2c97-4081-8178-3a9d949449df",
+          "expectedControlType": "Axis",
+          "processors": "",
+          "interactions": "",
+          "initialStateCheck": true
+        },
+        {
+          "name": "Yaw",
+          "type": "Value",
+          "id": "e963ce4a-b5e1-4c12-87ba-3a6d71b48b59",
+          "expectedControlType": "Axis",
+          "processors": "",
+          "interactions": "",
+          "initialStateCheck": true
+        },
+        {
+          "name": "Throttle",
+          "type": "Value",
+          "id": "a90df232-a145-4279-9941-86be8bb3c2fa",
+          "expectedControlType": "Axis",
+          "processors": "",
+          "interactions": "",
+          "initialStateCheck": true
+        },
+        {
+          "name": "Airbrake",
+          "type": "Button",
+          "id": "b6a71e62-c0e4-4fa9-a417-eb969399df4a",
+          "expectedControlType": "Button",
+          "processors": "",
+          "interactions": "",
+          "initialStateCheck": false
+        },
+        {
+          "name": "Afterburner",
+          "type": "Button",
+          "id": "673f40d3-35f9-4d69-a29d-4c3116df16e2",
+          "expectedControlType": "Button",
+          "processors": "",
+          "interactions": "",
+          "initialStateCheck": false
+        },
+        {
+          "name": "FirePrimary",
+          "type": "Button",
+          "id": "9025ce25-9c98-444d-bce8-1549721798ec",
+          "expectedControlType": "Button",
+          "processors": "",
+          "interactions": "",
+          "initialStateCheck": false
+        },
+        {
+          "name": "FireMissile",
+          "type": "Button",
+          "id": "6ebef598-a37f-4428-bc48-c89b8a9235e1",
+          "expectedControlType": "Button",
+          "processors": "",
+          "interactions": "",
+          "initialStateCheck": false
+        },
+        {
+          "name": "TargetLock",
+          "type": "Button",
+          "id": "d0e149f1-caee-4e5a-a38f-621379ec69eb",
+          "expectedControlType": "Button",
+          "processors": "",
+          "interactions": "",
+          "initialStateCheck": false
+        },
+        {
+          "name": "Countermeasures",
+          "type": "Button",
+          "id": "ff18e952-4fc8-4ca3-b3c3-d922bb48bb37",
+          "expectedControlType": "Button",
+          "processors": "",
+          "interactions": "",
+          "initialStateCheck": false
+        },
+        {
+          "name": "SwitchCamera",
+          "type": "Button",
+          "id": "5173e351-eef1-4b10-a2ea-9e797ebcf9a2",
+          "expectedControlType": "Button",
+          "processors": "",
+          "interactions": "",
+          "initialStateCheck": false
+        },
+        {
+          "name": "Pause",
+          "type": "Button",
+          "id": "164d7df6-2e8c-4bc4-9d5f-7f9e80a5f782",
+          "expectedControlType": "Button",
+          "processors": "",
+          "interactions": "",
+          "initialStateCheck": false
+        }
+      ],
+      "bindings": [
+        {
+          "name": "1D Axis Keyboard W/S",
+          "id": "d0c4d879-c5c8-472d-8ae5-c7ee5eb24128",
+          "path": "1DAxis",
+          "interactions": "",
+          "processors": "",
+          "groups": "",
+          "action": "Pitch",
+          "isComposite": true,
+          "isPartOfComposite": false
+        },
+        {
+          "name": "negative",
+          "id": "bfd67280-9946-4903-b09e-7fae87aaae85",
+          "path": "<Keyboard>/w",
+          "interactions": "",
+          "processors": "",
+          "groups": "",
+          "action": "Pitch",
+          "isComposite": false,
+          "isPartOfComposite": true
+        },
+        {
+          "name": "positive",
+          "id": "4bfe6f63-0498-4c17-a062-736b06e40939",
+          "path": "<Keyboard>/s",
+          "interactions": "",
+          "processors": "",
+          "groups": "",
+          "action": "Pitch",
+          "isComposite": false,
+          "isPartOfComposite": true
+        },
+        {
+          "name": "",
+          "id": "97e10885-bc3a-4eb6-993d-8869a842fba5",
+          "path": "<Gamepad>/leftStick/y",
+          "interactions": "",
+          "processors": "Invert",
+          "groups": "",
+          "action": "Pitch",
+          "isComposite": false,
+          "isPartOfComposite": false
+        },
+        {
+          "name": "1D Axis Keyboard A/D",
+          "id": "cf66195c-9c98-494b-a6bc-d754b2d5d852",
+          "path": "1DAxis",
+          "interactions": "",
+          "processors": "",
+          "groups": "",
+          "action": "Roll",
+          "isComposite": true,
+          "isPartOfComposite": false
+        },
+        {
+          "name": "negative",
+          "id": "fa2f664a-2503-4632-850f-2e0fcfd0fa1d",
+          "path": "<Keyboard>/a",
+          "interactions": "",
+          "processors": "",
+          "groups": "",
+          "action": "Roll",
+          "isComposite": false,
+          "isPartOfComposite": true
+        },
+        {
+          "name": "positive",
+          "id": "180b6db8-2d07-4e0e-afcb-190bf037eb20",
+          "path": "<Keyboard>/d",
+          "interactions": "",
+          "processors": "",
+          "groups": "",
+          "action": "Roll",
+          "isComposite": false,
+          "isPartOfComposite": true
+        },
+        {
+          "name": "",
+          "id": "2f61eeea-eaeb-4a11-827b-fb80df88775f",
+          "path": "<Gamepad>/leftStick/x",
+          "interactions": "",
+          "processors": "",
+          "groups": "",
+          "action": "Roll",
+          "isComposite": false,
+          "isPartOfComposite": false
+        },
+        {
+          "name": "1D Axis Keyboard Q/E",
+          "id": "7fa1ce07-33f7-4a0b-8d76-574ad822b31f",
+          "path": "1DAxis",
+          "interactions": "",
+          "processors": "",
+          "groups": "",
+          "action": "Yaw",
+          "isComposite": true,
+          "isPartOfComposite": false
+        },
+        {
+          "name": "negative",
+          "id": "5f957ebc-e1f2-4cf4-9e85-d85c5e83ec55",
+          "path": "<Keyboard>/q",
+          "interactions": "",
+          "processors": "",
+          "groups": "",
+          "action": "Yaw",
+          "isComposite": false,
+          "isPartOfComposite": true
+        },
+        {
+          "name": "positive",
+          "id": "31b2ec57-190a-4a61-9494-06103ff28d77",
+          "path": "<Keyboard>/e",
+          "interactions": "",
+          "processors": "",
+          "groups": "",
+          "action": "Yaw",
+          "isComposite": false,
+          "isPartOfComposite": true
+        },
+        {
+          "name": "1D Axis Gamepad Bumpers",
+          "id": "630ce5f5-fce1-4fa3-9ce7-59dbe71c1bb4",
+          "path": "1DAxis",
+          "interactions": "",
+          "processors": "",
+          "groups": "",
+          "action": "Yaw",
+          "isComposite": true,
+          "isPartOfComposite": false
+        },
+        {
+          "name": "negative",
+          "id": "e44d56d1-e565-4f3b-85be-1fe186e80b43",
+          "path": "<Gamepad>/leftShoulder",
+          "interactions": "",
+          "processors": "",
+          "groups": "",
+          "action": "Yaw",
+          "isComposite": false,
+          "isPartOfComposite": true
+        },
+        {
+          "name": "positive",
+          "id": "9ca1089f-8547-4950-8a14-4113cb77a160",
+          "path": "<Gamepad>/rightShoulder",
+          "interactions": "",
+          "processors": "",
+          "groups": "",
+          "action": "Yaw",
+          "isComposite": false,
+          "isPartOfComposite": true
+        },
+        {
+          "name": "1D Axis Keyboard Shift/Ctrl",
+          "id": "f5f7dc53-c4e8-466d-88cb-16cfa21be3ad",
+          "path": "1DAxis",
+          "interactions": "",
+          "processors": "",
+          "groups": "",
+          "action": "Throttle",
+          "isComposite": true,
+          "isPartOfComposite": false
+        },
+        {
+          "name": "negative",
+          "id": "f5be1be4-5390-482a-a92c-e1bb706037b5",
+          "path": "<Keyboard>/leftCtrl",
+          "interactions": "",
+          "processors": "",
+          "groups": "",
+          "action": "Throttle",
+          "isComposite": false,
+          "isPartOfComposite": true
+        },
+        {
+          "name": "positive",
+          "id": "c1aeb624-9b57-4148-9f1a-b333642ea869",
+          "path": "<Keyboard>/leftShift",
+          "interactions": "",
+          "processors": "",
+          "groups": "",
+          "action": "Throttle",
+          "isComposite": false,
+          "isPartOfComposite": true
+        },
+        {
+          "name": "",
+          "id": "524c5598-a110-449e-b152-441f7e3c1265",
+          "path": "<Keyboard>/space",
+          "interactions": "",
+          "processors": "",
+          "groups": "",
+          "action": "Airbrake",
+          "isComposite": false,
+          "isPartOfComposite": false
+        },
+        {
+          "name": "",
+          "id": "90ce2e62-c0e4-4fa9-a417-eb969399df4a",
+          "path": "<Gamepad>/buttonEast",
+          "interactions": "",
+          "processors": "",
+          "groups": "",
+          "action": "Airbrake",
+          "isComposite": false,
+          "isPartOfComposite": false
+        },
+        {
+          "name": "",
+          "id": "fef29532-613d-4c33-875f-2b5a198be128",
+          "path": "<Keyboard>/tab",
+          "interactions": "",
+          "processors": "",
+          "groups": "",
+          "action": "Afterburner",
+          "isComposite": false,
+          "isPartOfComposite": false
+        },
+        {
+          "name": "",
+          "id": "766060c2-9ee6-4e56-8ae8-aa03b715691d",
+          "path": "<Gamepad>/leftStickPress",
+          "interactions": "",
+          "processors": "",
+          "groups": "",
+          "action": "Afterburner",
+          "isComposite": false,
+          "isPartOfComposite": false
+        },
+        {
+          "name": "",
+          "id": "9eb2be4a-efc3-424a-aafe-21c6183fc6e8",
+          "path": "<Mouse>/leftButton",
+          "interactions": "",
+          "processors": "",
+          "groups": "",
+          "action": "FirePrimary",
+          "isComposite": false,
+          "isPartOfComposite": false
+        },
+        {
+          "name": "",
+          "id": "787c8052-a6b1-4171-8b6b-31d044fa9cfa",
+          "path": "<Gamepad>/rightTrigger",
+          "interactions": "",
+          "processors": "",
+          "groups": "",
+          "action": "FirePrimary",
+          "isComposite": false,
+          "isPartOfComposite": false
+        },
+        {
+          "name": "",
+          "id": "c1c1f5a5-827c-473c-bb4c-6fa10dfefb37",
+          "path": "<Keyboard>/f",
+          "interactions": "",
+          "processors": "",
+          "groups": "",
+          "action": "FireMissile",
+          "isComposite": false,
+          "isPartOfComposite": false
+        },
+        {
+          "name": "",
+          "id": "9366df04-e5e6-42d4-a15d-f155c829e5fa",
+          "path": "<Mouse>/rightButton",
+          "interactions": "",
+          "processors": "",
+          "groups": "",
+          "action": "FireMissile",
+          "isComposite": false,
+          "isPartOfComposite": false
+        },
+        {
+          "name": "",
+          "id": "673f40d3-35f9-4d69-a29d-4c3116df16e3",
+          "path": "<Keyboard>/r",
+          "interactions": "",
+          "processors": "",
+          "groups": "",
+          "action": "TargetLock",
+          "isComposite": false,
+          "isPartOfComposite": false
+        },
+        {
+          "name": "",
+          "id": "010375a0-0d32-4757-bb03-88849daff91f",
+          "path": "<Mouse>/middleButton",
+          "interactions": "",
+          "processors": "",
+          "groups": "",
+          "action": "TargetLock",
+          "isComposite": false,
+          "isPartOfComposite": false
+        },
+        {
+          "name": "",
+          "id": "d0e149f1-caee-4e5a-a38f-621379ec69ec",
+          "path": "<Gamepad>/buttonNorth",
+          "interactions": "",
+          "processors": "",
+          "groups": "",
+          "action": "TargetLock",
+          "isComposite": false,
+          "isPartOfComposite": false
+        },
+        {
+          "name": "",
+          "id": "40b15b5e-450f-48d6-a212-f7efdf768f5c",
+          "path": "<Keyboard>/x",
+          "interactions": "",
+          "processors": "",
+          "groups": "",
+          "action": "Countermeasures",
+          "isComposite": false,
+          "isPartOfComposite": false
+        },
+        {
+          "name": "",
+          "id": "5fa23fa3-0be9-450f-aa4e-76e3dca16e45",
+          "path": "<Gamepad>/dpad/down",
+          "interactions": "",
+          "processors": "",
+          "groups": "",
+          "action": "Countermeasures",
+          "isComposite": false,
+          "isPartOfComposite": false
+        },
+        {
+          "name": "",
+          "id": "7f0fa9ea-5b43-42e7-9d7a-115f52ea2bf2",
+          "path": "<Keyboard>/c",
+          "interactions": "",
+          "processors": "",
+          "groups": "",
+          "action": "SwitchCamera",
+          "isComposite": false,
+          "isPartOfComposite": false
+        },
+        {
+          "name": "",
+          "id": "f516a5b6-76a0-4cf8-be8e-f191b7d5668e",
+          "path": "<Gamepad>/dpad/up",
+          "interactions": "",
+          "processors": "",
+          "groups": "",
+          "action": "SwitchCamera",
+          "isComposite": false,
+          "isPartOfComposite": false
+        },
+        {
+          "name": "",
+          "id": "060d2bcf-f74d-4076-96b0-466548545e8e",
+          "path": "<Keyboard>/escape",
+          "interactions": "",
+          "processors": "",
+          "groups": "",
+          "action": "Pause",
+          "isComposite": false,
+          "isPartOfComposite": false
+        },
+        {
+          "name": "",
+          "id": "8fcefa75-4712-4c28-97c3-3058a2d1d293",
+          "path": "<Gamepad>/start",
+          "interactions": "",
+          "processors": "",
+          "groups": "",
+          "action": "Pause",
+          "isComposite": false,
+          "isPartOfComposite": false
+        }
+      ]
+    }
+  ],
+  "controlSchemes": []
+}
